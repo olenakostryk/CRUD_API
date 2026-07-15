@@ -52,6 +52,17 @@ http://127.0.0.1:8000/docs
 | PUT    | /items/{id} | Update item     |
 | DELETE | /items/{id} | Delete item     |
 
+
+## curl -i output example
+
+HTTP/1.1 200 OK
+date: Wed, 15 Jul 2026 12:09:02 GMT
+server: uvicorn
+content-length: 167
+content-type: application/json
+
+[{"id":1,"title":"Create Hello server","done":true},{"id":2,"title":"Root and Health Endpoints","done":true},{"id":3,"title":"Read list and single task","done":false}]
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba6c7d51-14b7-4edd-b7ea-f68d43f75863" />
 
 <img width="1920" height="1080" alt="Screenshot_20260715_144908" src="https://github.com/user-attachments/assets/2112b816-23d7-41ea-9076-9c1a11affd2c" />
