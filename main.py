@@ -34,7 +34,12 @@ def health():
 
 @app.get("/tasks")
 def  get_tasks():
-    return tasks
+    new_list = []
+    for task in tasks:
+        if task["done"] == True:
+           new_list.append(task)
+    return new_list
+
 
 @app.get("/tasks/{id}")
 def tasks_id(id : int):
@@ -92,4 +97,4 @@ def delete_task(id: int):
             detail=f"Unknown {id}"
      )
     
-   
+    
