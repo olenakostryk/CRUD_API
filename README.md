@@ -104,6 +104,7 @@ content-type: application/json
 <img width="1920" height="1080" alt="Screenshot_20260715_145125" src="https://github.com/user-attachments/assets/c073f02f-19b7-4bf0-998d-fb521f1ac99d" />
 <img width="1920" height="1080" alt="Screenshot_20260715_145114" src="https://github.com/user-attachments/assets/2b1a692a-0c94-4981-ad83-2c90fc0964e6" />
 <img width="1920" height="1080" alt="Screenshot_20260715_145029" src="https://github.com/user-attachments/assets/c4182ca2-abe4-4634-b4b6-235f077d5dcf" />
+<img width="721" height="506" alt="Screenshot_20260727_000102" src="https://github.com/user-attachments/assets/b0643de3-ce05-4027-8eec-2dbd2a336d46" />
 
 
 
