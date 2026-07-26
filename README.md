@@ -1,10 +1,31 @@
-# FastAPI CRUD API
+# FastAPI Task API with SQLite
 ## Description
 
-This is a REST API built with FastAPI that performs CRUD operations for items.
-The project demonstrates basic API development with FastAPI, Pydantic, and Uvicorn.
-It includes automatic Swagger documentation and supports creating, reading, updating, and deleting items.
+This project is a REST API built with **FastAPI** that performs CRUD (Create, Read, Update, Delete) operations for tasks. Unlike the previous version that stored data in memory, this project uses a **SQLite** database, allowing data to persist even after the server restarts.
 
+The API automatically creates the database and the required table on the first run and inserts three example tasks if the database is empty.
+
+## Why SQLite?
+
+SQLite was chosen because:
+
+- It is lightweight and requires no separate database server.
+- The database is stored in a single file.
+- It is easy to set up and ideal for learning backend development.
+- Python provides built-in support through the `sqlite3` library.
+
+---
+## Database Location
+
+The database file is named:
+
+```
+tasks.db
+```
+
+It is automatically created in the project root directory (the same folder as `main.py`) when the application is started for the first time.
+
+---
 ## Installation
 
 Clone the repository
@@ -30,6 +51,16 @@ venv\Scripts\activate
 Install dependencies
 
 pip install -r requirements.txt
+
+## Automatic Database Setup
+
+When the project starts:
+
+- `tasks.db` is created automatically if it does not exist.
+- The `tasks` table is created automatically if it does not exist.
+- Three example tasks are inserted only if the table is empty.
+
+No manual database setup is required.
 
 ## Run
 
@@ -73,4 +104,6 @@ content-type: application/json
 <img width="1920" height="1080" alt="Screenshot_20260715_145125" src="https://github.com/user-attachments/assets/c073f02f-19b7-4bf0-998d-fb521f1ac99d" />
 <img width="1920" height="1080" alt="Screenshot_20260715_145114" src="https://github.com/user-attachments/assets/2b1a692a-0c94-4981-ad83-2c90fc0964e6" />
 <img width="1920" height="1080" alt="Screenshot_20260715_145029" src="https://github.com/user-attachments/assets/c4182ca2-abe4-4634-b4b6-235f077d5dcf" />
+
+
 
